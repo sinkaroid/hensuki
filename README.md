@@ -1,20 +1,16 @@
-# h2rwinsh
-bash https://hentai2read.com downloader and using cwget binary for windows
+# Hensuki  
+Steal your fav doujinshi/artwork from many platform using bash  
 
 Get started
 ----
 put /bin in your local bin
 
-     $ mv  -v ~/bin* ~/usr/local/bin/rubbishword  
+     $ mv wget.h wget.exe /whereur/local/bin/  
 
-## usage
-![](https://1.bp.blogspot.com/-Rv5kzibe_o8/XU3SRZvCD_I/AAAAAAAAJoI/-DIkfJp1prkjUw_ImmFNfnziKVmN3ML8QCLcBGAs/s1600/Screenshot_70.png)
+## usage:  
+![](https://1.bp.blogspot.com/-0vmc00JDwCE/XZkSeTkNHUI/AAAAAAAAJvU/bg3e8tqMyVEGjQpOA-mNOLVGZAtRQ3tPACLcBGAsYHQ/s1600/Screenshot_191.png)
 ```sh
-$ ./hentai.sh #chmod +x if necessary
-```  
-
-```php
-# ie: hentai2read.com/lewd_inuyamasenpai/1/ | just type "lewd_inuyamasenpai/1/"
+$ ./hensuki.sh
 ```  
 
 ## License
