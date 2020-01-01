@@ -5,7 +5,7 @@
 **Doujinshi Downloader trashtools**  
 Steal your fav doujinshi from each vendor easily with bash  
 Just put that nuclear code u will get it.  
-many depencies isn't needed, but if u run on windows consider to put that binary on your system.  
+many dependencies isn't needed, but if u run on windows consider to put that binary on your system.  
 
 - [x] simply-hentai network
 - [x] hentai2read
