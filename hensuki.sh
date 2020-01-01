@@ -13,11 +13,12 @@ echo -e "${RED}
  | |__   ___ _ __  ___ _   _| | ___ 
  | '_ \ / _ \ '_ \/ __| | | | |/ / |
  | | | |  __/ | | \__ \ |_| |   <| |
- |_| |_|\___|_| |_|___/\__,_|_|\_\_|"
-echo " #[bash NSFW Doujinstealer] -sin#"
+ |_| |_|\___|_| |_|___/\__,_|_|\_\_|
+             [!] [bash NSFW Doujinstealer] 2019 -sin [!]"
 echo -e "${GREEN}"
-PS3='select your platform or "4" to exit: '
-options=("simply-hentai" "hentai2read" "nhentai" "Quit")
+
+PS3='type your vendor number or "5" to exit: '
+options=("simply-hentai" "hentai2read" "nhentai" "hentaicafe" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -29,6 +30,9 @@ do
             ;;
         "nhentai")
             cd bin;./nhen.sh
+            ;;
+        "hentaicafe")
+            cd bin;./hcafe.sh
             ;;
        
         "Quit")
