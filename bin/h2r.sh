@@ -16,14 +16,14 @@ echo "just type: ${CYAN}lewd_inuyamasenpai/1/"
 read -p "${GREEN}PATH: " kode
 echo -e "\n"
 read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1 
-echo -e "reading source for /${GREEN}$kode ..
+echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 
 wget -O meki.html https://hentai2read.com/${kode};
 
 #do
 mkdir -pv "${kode}" 
-echo -e "wait pls, try to get /${GREEN}$kode ..
+echo -e "still doing for /${GREEN}$kode ...
 ${WHITE}"
 cat meki.html| grep "'images'" | sed 's/","/\nstatic.hentaicdn.com\/hentai/g' | sed "s/\\\//g" | sed 's/"],//g' > ${kode}/asu.txt #dog
 cd ${kode};

@@ -24,7 +24,7 @@ echo "![Nhentai stealer]!"
 read -p "${WHITE}code: " kode
 echo -e "\n"
 read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
-echo -e "reading source for /${GREEN}$kode ..
+echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 
 wget -q -nv -O ${kode}.html https://nhentai.net/g/${kode};
@@ -35,11 +35,13 @@ var="$(cat ${kode}.html | grep -oP '(?<=<h1>)[^<]*')"
 echo ${GREEN}$var
 echo ${WHITE}
 mkdir -pv "${var}" 
+echo -e "still doing for /${GREEN}$kode ..."
+
 #do
 
 cat ${kode}.html | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai/i.nhentai/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' > "${var}"/links.txt | rm ${kode}.html; 
 cd "${var}";
-wget -q -nv -i links.txt | rm links.txt # option -i $argv if necessary show dat process
+wget -q -nv -i links.txt # option -i $argv if necessary show dat process
 
 
 

@@ -16,7 +16,7 @@ echo "just type: ${CYAN}14287"
 read -p "${GREEN}code: " kode
 echo -e "\n"
 read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1 
-echo -e "reading source for /${GREEN}$kode ..
+echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 wget -O meki.html https://hentai.cafe/hc.fyi/${kode};
 anjing=$(cat meki.html | grep -Po 'href="\K.*?(?=" title="Read")')
@@ -25,7 +25,7 @@ title="$(cat meki.html | grep -oP '(?<=<h3>)[^<]*')"
 rm meki.html;
 
 mkdir -pv "${title}" 
-echo -e "wait pls, try to get /${GREEN}$kode ..
+echo -e "still doing for /${GREEN}$kode ...
 ${WHITE}"
 cd "${title}";
 wget -O link.txt ${anjing}
