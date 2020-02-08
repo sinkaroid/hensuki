@@ -33,6 +33,7 @@ json="cat ${kode}.html"
 var="$($json | grep -oP '(?<=<h1>)[^<]*')"
 tag="$($json | grep -oP '(?<= ">)[^<]*' | sed 's/ //' | sed 's/$/\,/')"
 count="$($json | grep -oP '(?<=<div>)[^<]*' | sed 's/Uploaded//')"
+hapus="rm ${kode}.html"
 
 echo "Title:" ${GREEN}$var
 echo "${WHITE}Tags:" ${RED}$tag
@@ -43,7 +44,7 @@ echo -e "still doing /${GREEN}$kode ..."
 
 #do
 
-cat ${kode}.html | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai/i.nhentai/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' > "${var}"/links.txt | rm ${kode}.html; 
+cat ${kode}.html | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai/i.nhentai/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' > "${var}"/links.txt | ${hapus};
 cd "${var}";
 wget -q -nv -i links.txt # option -i $argv if necessary show dat process
 
