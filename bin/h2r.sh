@@ -13,9 +13,8 @@ echo "usage : ['series']/['chapter']"
 echo "ie: https://hentai2read.com/lewd_inuyamasenpai/1/"
 echo "just type: ${CYAN}lewd_inuyamasenpai/1/"
 #get
-read -p "${GREEN}PATH: " kode
-echo -e "\n"
-read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1 
+echo "code:"
+read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 

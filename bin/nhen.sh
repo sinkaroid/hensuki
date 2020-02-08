@@ -21,21 +21,25 @@ echo -e "${RED}
 echo "![Nhentai stealer]!"
 
 #get
-read -p "${WHITE}code: " kode
-echo -e "\n"
-read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+echo "code:"
+read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 
 wget -q -nv -O ${kode}.html https://nhentai.net/g/${kode};
+json="cat ${kode}.html"
 
 
-var="$(cat ${kode}.html | grep -oP '(?<=<h1>)[^<]*')"
+var="$($json | grep -oP '(?<=<h1>)[^<]*')"
+tag="$($json | grep -oP '(?<= ">)[^<]*' | sed 's/ //' | sed 's/$/\,/')"
+count="$($json | grep -oP '(?<=<div>)[^<]*' | sed 's/Uploaded//')"
 
-echo ${GREEN}$var
+echo "Title:" ${GREEN}$var
+echo "${WHITE}Tags:" ${RED}$tag
+echo "${WHITE}Count:" ${CYAN}$count
 echo ${WHITE}
 mkdir -pv "${var}" 
-echo -e "still doing for /${GREEN}$kode ..."
+echo -e "still doing /${GREEN}$kode ..."
 
 #do
 

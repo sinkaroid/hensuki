@@ -13,9 +13,8 @@ echo "usage : ['code']"
 echo "ie: https://hentai.cafe/hc.fyi/14287"
 echo "just type: ${CYAN}14287"
 #get
-read -p "${GREEN}code: " kode
-echo -e "\n"
-read -p "${WHITE}${kode} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1 
+echo "code:"
+read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 wget -O meki.html https://hentai.cafe/hc.fyi/${kode};
