@@ -17,8 +17,8 @@ echo -e "${RED}
              [!] [bash NSFW Doujinstealer] 2019 -sin [!]"
 echo -e "${GREEN}"
 
-PS3='type your vendor number or "6" to exit: '
-options=("simply-hentai" "hentai2read" "nhentai" "hentaicafe" "hentainexus" "Quit")
+PS3='type your vendor number or "7" to exit: '
+options=("simply-hentai" "hentai2read" "nhentai" "hentaicafe" "hentainexus" "pururin" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -34,8 +34,11 @@ do
         "hentaicafe")
             cd bin;./hcafe.sh
             ;;
-       "hentainexus")
+        "hentainexus")
             cd bin;./hnexus.sh
+            ;;
+        "pururin")
+            cd bin;./pur.sh
             ;;
         "Quit")
             break

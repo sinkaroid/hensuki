@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "1.5 // added hnexus and implemented pattern"
+git commit -m "1.6 // added pururin and implemented pattern"
 git push -f origin master
