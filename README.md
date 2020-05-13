@@ -23,7 +23,7 @@ many dependencies isn't needed, but if u run on windows consider to put that bin
 https://www.gnu.org/software/wget/manual/   
 ```sh
 $ mv wget.exe /local/bin/ #adjust to ur own console
-$ ./hensuki.sh #chmod +x if necessary
+$ ./hensuki
 ```
 
 ![](https://i.imgur.com/FTTADcq.png)

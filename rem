@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "1.6 // added pururin and implemented pattern"
+git commit -m "change basename(__FILE__) to ./executes instead"
 git push -f origin master
