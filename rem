@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "1.7 // change constructs and some pattern"
+git commit -m "ci config"
 git push -f origin master
