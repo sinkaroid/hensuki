@@ -18,17 +18,21 @@ read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
 
+#fundamen
+json="cat meki.html"
+
+
 wget -O meki.html https://hentai2read.com/${kode};
 
 #do
 mkdir -pv "${kode}" 
 echo -e "still doing for /${GREEN}$kode ...
 ${WHITE}"
-cat meki.html| grep "'images'" | sed 's/","/\nstatic.hentaicdn.com\/hentai/g' | sed "s/\\\//g" | sed 's/"],//g' > ${kode}/asu.txt #dog
+${json} | grep "'images'" | sed 's/","/\nstatic.hentaicdn.com\/hentai/g' | sed "s/\\\//g" | sed 's/"],//g' > ${kode}/asu.txt #dog
 cd ${kode};
 wget -q -nv -i asu.txt # --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
 # option -i $argv if necessary show dat process
-cd -
+cd $OLDPWD
 rm meki.html;
 
 #length

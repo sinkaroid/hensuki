@@ -18,6 +18,7 @@ echo "code:"
 read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
+meki="cat meki.html"
 
 wget -O meki.html https://www.simply-hentai.com/${kode};
 
@@ -25,12 +26,12 @@ wget -O meki.html https://www.simply-hentai.com/${kode};
 mkdir -pv "${kode}" 
 echo -e "still doing for /${GREEN}$kode ...
 ${WHITE}"
-cat meki.html | grep -Po 'full":"\K[^"]+' > ${kode}/asu.txt #dog
+${meki} | grep -Po 'full":"\K[^"]+' > ${kode}/asu.txt #dog
 cd ${kode};
 wget -q -nv -i asu.txt # --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
-mv * ..
+rm asu.txt
 # option -i $argv if necessary show dat process
-cd -
+cd $OLDPWD
 rm meki.html;
 
 #length

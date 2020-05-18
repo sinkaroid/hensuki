@@ -17,26 +17,34 @@ echo "code:"
 read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
+kuproy="cat link.txt"
+jamet="cat pu.html"
+
 wget -q -nv -O pu.html https://pururin.io/gallery/${kode};
-anjing=$(cat pu.html | grep -oP '(?<=<title>)[^/*\/]*' | sed 's/ $//' |  sed 's/\.//') #title
-count=$(cat pu.html | grep -oP '(?<=total=")[^"]*') #counts for loop
+anjing=$(${jamet} | grep -oP '(?<=<title>)[^/*\/]*' | sed 's/ $//' |  sed 's/\.//') #title
+count=$(${jamet} | grep -oP '(?<=total=")[^"]*') #counts for loop
 
 
 echo ${GREEN}${anjing}${WHITE}
 echo ${count}
+
+
 mkdir -pv "${anjing}"
-cat pu.html | grep -oP '(?<=image" content=")[^"]*' > "${anjing}"/link.txt | rm pu.html;
+${jamet} | grep -oP '(?<=image" content=")[^"]*' > "${anjing}"/link.txt
+rm pu.html
 cd "${anjing}";
-babi=$(cat link.txt | sed 's/./https:\//' | sed 's/cover//' | sed 's/\/\.jpg//')
+
+
+babi=$(${kuproy} | sed 's/./https:\//' | sed 's/cover//' | sed 's/\/\.jpg//')
 echo ${RED}"first match => "${GREEN}${babi}
 png='.png'
 jpg='.jpg'
-for i in $( eval echo {1..$count} )
+for i in $( eval "echo {1..$count}" )
 do
   echo "$babi/$i$jpg" 
 done > hey.txt
 wget -q -nv -i hey.txt
-rm *.txt;
+rm hey.txt
 
 
 termin=$(date +"%s")

@@ -17,13 +17,18 @@ echo "code:"
 read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
+
+jamet="cat nex.html"
+
 wget -q -nv -O nex.html https://hentainexus.com/read/${kode};
-anjing=$(cat nex.html | grep -Po '1, "\K.*?(?= ::)')
+anjing=$(${jamet} | grep -Po '1, "\K.*?(?= ::)')
 echo ${GREEN}${anjing}${WHITE}
 mkdir -pv "${anjing}"
-cat nex.html | grep -Po '"https:\K.*?(?=")' | sed 's/\\\/\\\//https:\/\//' | sed 's/\\//g' > "${anjing}"/link.txt | rm nex.html;
+${jamet} | grep -Po '"https:\K.*?(?=")' | sed 's/\\\/\\\//https:\/\//' | sed 's/\\//g' > "${anjing}"/link.txt
+rm nex.html;
 cd "${anjing}";
-wget -q -nv -i link.txt | rm link.txt;
+wget -q -nv -i link.txt 
+rm link.txt
 
 #length
 termin=$(date +"%s")

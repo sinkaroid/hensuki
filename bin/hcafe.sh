@@ -17,10 +17,14 @@ echo "code:"
 read -r kode
 echo -e "reading /${GREEN}$kode ..
 ${WHITE}"
+
+link="cat link.txt"
+meki="cat meki.html"
+
 wget -O meki.html https://hentai.cafe/hc.fyi/${kode};
-anjing=$(cat meki.html | grep -Po 'href="\K.*?(?=" title="Read")')
+anjing=$(${meki} | grep -Po 'href="\K.*?(?=" title="Read")')
 echo ${GREEN}${anjing}${WHITE}
-title="$(cat meki.html | grep -oP '(?<=<h3>)[^<]*')"
+title="$(${meki} | grep -oP '(?<=<h3>)[^<]*')"
 rm meki.html;
 
 mkdir -pv "${title}" 
@@ -28,7 +32,7 @@ echo -e "still doing for /${GREEN}$kode ...
 ${WHITE}"
 cd "${title}";
 wget -O link.txt ${anjing}
-cat link.txt | grep thumb_url | grep -Po 'thumb_url":"\K.*?(?=")' | sed 's:\\\/:/:g' > asu.txt #dog
+${link} | grep thumb_url | grep -Po 'thumb_url":"\K.*?(?=")' | sed 's:\\\/:/:g' > asu.txt #dog
 
 wget -q -nv -i asu.txt # --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
 # option -i $argv if necessary show dat process
