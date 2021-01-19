@@ -23,7 +23,7 @@ wget -q -nv -O ${kode}.html https://nhentai.net/g/${kode};
 json="cat ${kode}.html"
 jamet="cat links.txt"
 
-var="$($json | grep -oP '(?<=<span class="pretty">)[^<]*' | sed -z 's/\n//g' | sed 's/\//_/')" ## title > sed fg/o > _
+var="$($json | grep -oP '(?<=<title>)[^<]*' | sed -z 's/\n//g' | sed 's/&raquo;/-/')" ## title > sed fg/o > _
 tag="$($json | grep -Po '(?<=<span class="name">)([^<]*)')" ## tags
 count="$($json | grep -Po '(?<=<span class="name">)[0-9]([^<]*)')" ## count
 
@@ -38,7 +38,7 @@ echo "${WHITE}Count:" ${CYAN}$count
 
 
 echo ${WHITE}
-mkdir -pv "${var}" 
+mkdir -pv "${var:0:225}" 
 echo -e "still doing /${GREEN}$kode ..."
 
 #do
