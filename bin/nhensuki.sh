@@ -35,13 +35,13 @@ echo "${WHITE}Count:" ${CYAN}$count
 
 
 echo ${WHITE}
-mkdir -pv "${var}" 
+mkdir -pv "${var:0:225}" 
 echo -e "still doing /${GREEN}$kode ..."
 
 #do
 
-${json} | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai.net/hell.sinxdr.workers.dev/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' | sed 's/.*.svg//' > "${var}"/links.txt | ${hapus};
-cd "${var}";
+${json} | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai.net/hell.sinxdr.workers.dev/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' | sed 's/.*.svg//' > "${var:0:225}"/links.txt | ${hapus};
+cd "${var:0:225}";
 wget -q -nv -i links.txt # option -i $argv if necessary show dat process
 ${jamet} | sed 's/.*thumb.jpg//' | sed 's/.*cover.jpg//' | sed 's/.*.svg//' | sed -r '/^\s*$/d' > dog.txt
 
