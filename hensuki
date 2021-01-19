@@ -29,7 +29,7 @@ do
             cd bin;./h2r.sh
             ;;
         "nhentai")
-            cd bin;./nhensuki.sh
+            cd bin;./nhen.sh
             ;;
         "nhensuki")
             cd bin;./nhensuki.sh
