@@ -55,12 +55,3 @@ done
 - [ ] nhensuki
 - [ ] pururin
 ![](https://i.imgur.com/p0ThnzU.png)
-## Response
-before init, should run [./nanjo](nanjo) == works as a request-response protocol between a client and vendor server.
-this case just check your request was blocked by your provider or not.
-
-response will return:
-
-----
-      200 => https://nhentai.net
-      200 => https://hentainexus.com
