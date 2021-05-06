@@ -1,53 +1,55 @@
 <div align="center">
    <img width="270" src="https://i.imgur.com/yGdd3PO.png" alt="logo"></br><h2>Hensuki</h2>
 
-[![](https://img.shields.io/badge/hensuki-1.7-blueviolet)](https://github.com/sinkaroid/Hensuki/commits/master) [![](https://img.shields.io/badge/codename-nanjo%20-purple)](https://github.com/sinkaroid/hensuki/tree/master) [![!#/bin/bash](https://img.shields.io/badge/-%23!%2Fbin%2Fbash-1f425f.svg?style=plastic&logo=image%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkE3MDg2QTAyQUZCMzExRTVBMkQxRDMzMkJDMUQ4RDk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkE3MDg2QTAzQUZCMzExRTVBMkQxRDMzMkJDMUQ4RDk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTcwODZBMDBBRkIzMTFFNUEyRDFEMzMyQkMxRDhEOTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTcwODZBMDFBRkIzMTFFNUEyRDFEMzMyQkMxRDhEOTciLz4gPC9yZGY6RGVzY3JpcHRpb24%2BIDwvcmRmOlJERj4gPC94OnhtcG1ldGE%2BIDw%2FeHBhY2tldCBlbmQ9InIiPz6lm45hAAADkklEQVR42qyVa0yTVxzGn7d9Wy03MS2ii8s%2BeokYNQSVhCzOjXZOFNF4jx%2BMRmPUMEUEqVG36jo2thizLSQSMd4N8ZoQ8RKjJtooaCpK6ZoCtRXKpRempbTv5ey83bhkAUphz8fznvP8znn%2B%2F3NeEEJgNBoRRSmz0ub%2FfuxEacBg%2FDmYtiCjgo5NG2mBXq%2BH5I1ogMRk9Zbd%2BQU2e1ML6VPLOyf5tvBQ8yT1lG10imxsABm7SLs898GTpyYynEzP60hO3trHDKvMigUwdeaceacqzp7nOI4n0SSIIjl36ao4Z356OV07fSQAk6xJ3XGg%2BLCr1d1OYlVHp4eUHPnerU79ZA%2F1kuv1JQMAg%2BE4O2P23EumF3VkvHprsZKMzKwbRUXFEyTvSIEmTVbrysp%2BWr8wfQHGK6WChVa3bKUmdWou%2BjpArdGkzZ41c1zG%2Fu5uGH4swzd561F%2BuhIT4%2BLnSuPsv9%2BJKIpjNr9dXYOyk7%2FBZrcjIT4eCnoKgedJP4BEqhG77E3NKP31FO7cfQA5K0dSYuLgz2TwCWJSOBzG6crzKK%2BohNfni%2Bx6OMUMMNe%2Fgf7ocbw0v0acKg6J8Ql0q%2BT%2FAXR5PNi5dz9c71upuQqCKFAD%2BYhrZLEAmpodaHO3Qy6TI3NhBpbrshGtOWKOSMYwYGQM8nJzoFJNxP2HjyIQho4PewK6hBktoDcUwtIln4PjOWzflQ%2Be5yl0yCCYgYikTclGlxadio%2BBQCSiW1UXoVGrKYwH4RgMrjU1HAB4vR6LzWYfFUCKxfS8Ftk5qxHoCUQAUkRJaSEokkV6Y%2F%2BJUOC4hn6A39NVXVBYeNP8piH6HeA4fPbpdBQV5KOx0QaL1YppX3Jgk0TwH2Vg6S3u%2BdB91%2B%2FpuNYPYFl5uP5V7ZqvsrX7jxqMXR6ff3gCQSTzFI0a1TX3wIs8ul%2Bq4HuWAAiM39vhOuR1O1fQ2gT%2F26Z8Z5vrl2OHi9OXZn995nLV9aFfS6UC9JeJPfuK0NBohWpCHMSAAsFe74WWP%2BvT25wtP9Bpob6uGqqyDnOtaeumjRu%2ByFu36VntK%2FPA5umTJeUtPWZSU9BCgud661odVp3DZtkc7AnYR33RRC708PrVi1larW7XwZIjLnd7R6SgSqWSNjU1B3F72pz5TZbXmX5vV81Yb7Lg7XT%2FUXriu8XLVqw6c6XqWnBKiiYU%2BMt3wWF7u7i91XlSEITwSAZ%2FCzAAHsJVbwXYFFEAAAAASUVORK5CYII%3D)](https://www.gnu.org/software/bash/) [![Build Status](https://travis-ci.org/sinkaroid/Hensuki.svg?branch=master)](https://travis-ci.org/sinkaroid/Hensuki) [![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/Hensuki/badge)](https://www.codefactor.io/repository/github/sinkaroid/Hensuki)  
+[![](https://img.shields.io/badge/hensuki-2.0-violet)](https://github.com/sinkaroid/Hensuki/commits/master) [![](https://img.shields.io/badge/codename-nanjo%20-purple)](https://github.com/sinkaroid/hensuki/tree/master) [![Build Status](https://travis-ci.org/sinkaroid/Hensuki.svg?branch=master)](https://travis-ci.org/sinkaroid/Hensuki) [![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/Hensuki/badge)](https://www.codefactor.io/repository/github/sinkaroid/Hensuki)  
 
 ----
 </div>
 
-**Doujin Downloader**  
-Steal your fav doujinshi from each vendor easily with bash  
-Just put that nuclear code u will get it.  
-Windows consider to put bash binary on your system.  
+## Hensuki 
+A Multivendor doujin grabber / downloader using Bash magic:  
+0 API, 0 dependencies (formerly thru one-liner) supported several site. 
 
-```json
-{
-    "vendor": [
-        "simply-hentai-network",
-        "hentai2read",
-        "nhentai",
-        "nhensuki",
-        "hentaicafe",
-        "hentainexus",
-        "pururin"
-    ]
-}
-```
+## Getting started  
+[![](src/Screenshot_190.png)](https://github.com/sinkaroid/Hensuki/commits/master)  
+Clone this repo and run `./hensuki` as usual
 
-## TODO  
-----
-     $ git clone https://github.com/sinkaroid/hensuki.git
-     $ cd hensuki;chmod -R 777 ./;./hensuki
+## Docs
+Pls take a look and read it if it helps you [Wiki](https://github.com/sinkaroid/hensuki/wiki)
 
-## Split return:
-```sh
-## split format is sucks?
-for img in *.png; do
-   filename=${img%.*}
-    convert "$filename.png" "$filename.jpg" && rm "$img";
-done
-```
+## Supported site
+- nhentai.net
+- hentai2read.com
+- www.simply-hentai.com
+- pururin.io
+- hentai.cafe (deprecated [#is_hentai_cafe_down_or_shut_down](https://www.reddit.com/r/SauceSharingCommunity/comments/m16f08/is_hentai_cafe_down_or_shut_down/))
+- hentainexus.com (deprecated [#hentainexus_is_permanently_shut_down_no_thanks_to](https://www.reddit.com/r/Piracy/comments/lv1mcs/hentainexus_is_permanently_shut_down_no_thanks_to/))
 
-## Response
-before init, should run [./nanjo](nanjo) == works as a request-response protocol between a client and vendor server.
-this case just check your request was blocked by your provider or not.
+## Todo
+- [X] nhentai
+- [X] hentai2read
+- [X] ~~hentaicafe~~
+- [X] ~~hentainexus~~
+- [X] nhensuki (for blocked country)
+- [X] pururin
+- [ ] hitomi
+- [ ] exhentai
 
-response will return:
+## Legal
 
-----
-      200 => https://nhentai.net
-      200 => https://hentainexus.com
+This tool can be freely copied, modified, altered, distributed without any attribution whatsoever. However, if you feel like this tool deserves an attribution, mention it. It won't hurt anybody :)
+
+Please, read the [license terms](/LICENSE). Don't worry, it can be read in less than 30 seconds, unless you have some sort of reading disability - in that case, I'm wondering why you're still reading this text. Really. Stop. Please. I mean, seriously. Why are you still reading?
+
+## Changelogs
+*@2.0 (current)*  
+*codename "__nanjo__"*  
+
+-- may-07-21
+- **refactor(*)**: lots of changes
+- **ci**: pipeline enjoyer
+- **fix**: nhentai gif images blank result
+- no more hentainexus and hentai.cafe 
 
 ## EOF:
-- feel free to make PR, maybe this tools just using `sucks` pattern and `weird` implementation, if u have more good ideas than this one, just PR.
+- @sinkaroid are not the best coder, so there are sure some problematic Coding decision. I'm always happy to receive Pull requests to improve things.

@@ -1,7 +1,7 @@
 language: bash
 
 before_script:
-    - curl -L "https://github.com/antiid/hensuki.git" | unzip
+    - curl -L "https://github.com/sinkaroid/hensuki.git" | unzip
 
 script:
-    - bash nanjo
+    - wget -q -nv -O lacur.phtml https://nhentai.net/g/258362; cat lacur.phtml | grep img | grep -Po '<img src="\K.*?(?=")' | sed 's/\?.*//' | sed 's/t.nhentai/i.nhentai/' | sed 's/t.jpg/.jpg/' | sed 's/t.png/.png/' | sed 's/t.gif/.gif/' > a.txt; wget -q -nv -i a.txt; ls; cat lacur.phtml | grep -oP '(?<=<span class="pretty">)[^<]*'
