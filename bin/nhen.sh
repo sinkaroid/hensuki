@@ -31,7 +31,7 @@ hapus="rm ${kode}.html"
 iki="rm links.txt dog.txt"
 sniff="rm *.svg"
 
-# proses
+# process
 echo "${WHITE}Title:" ${GREEN}$var
 echo "${WHITE}Tags:" ${RED}$tag
 echo "${WHITE}Count:" ${CYAN}$count
