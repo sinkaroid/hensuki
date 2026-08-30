@@ -1,0 +1,3 @@
+requests>=2.32.4
+inputimeout>=1.0.4
+beautifulsoup4>=4.13.4
