@@ -1,4 +1,4 @@
-# Jigoku Security
+# Hensuki Security
 
 ## Reporting vulnerabilities
 
