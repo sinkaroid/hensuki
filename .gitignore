@@ -1,30 +1,16 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-run.sh
-# C extensions
-*.so
+/legacy
 
-# Distribution / packaging
-.Python
-.idea
-build/
-result/
-playground/
-out/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Added by cargo
+
+/target

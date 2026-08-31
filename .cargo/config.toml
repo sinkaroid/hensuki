@@ -1,0 +1,2 @@
+[alias]
+clean-media = "run --bin clean_media"
