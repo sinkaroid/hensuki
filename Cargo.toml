@@ -1,6 +1,6 @@
 [package]
 name = "hensuki"
-version = "3.0.2"
+version = "3.0.3"
 edition = "2024"
 default-run = "hensuki"
 authors = ["sinkaroid <hey@sinkaroid.org>"]
@@ -8,8 +8,19 @@ description = "A fault-tolerant, adaptive imageboards downloader"
 readme = "README.md"
 repository = "https://github.com/sinkaroid/hensuki"
 license = "MIT"
-keywords = ["booru", "scraper", "downloader", "anime", "cli"]
+keywords = ["booru", "imageboards", "downloader", "anime", "cli"]
 categories = ["command-line-utilities"]
+exclude = [
+    "ci",
+    ".agent",
+    "legacy",
+    ".github",
+    "resources",
+    "AGENTS.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+]
 
 [dependencies]
 tokio = { version = "1.38", features = ["full"] }
