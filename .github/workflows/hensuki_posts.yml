@@ -1,0 +1,21 @@
+name: bulk multiple posts
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Build
+        run: cargo build --release
+      - name: Hensuki test
+        run: |
+          printf "ci/example_posts\n1\n1\n" | cargo run --release
