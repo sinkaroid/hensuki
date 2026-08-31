@@ -2,6 +2,7 @@
 name = "hensuki"
 version = "3.0.2"
 edition = "2024"
+default-run = "hensuki"
 authors = ["sinkaroid <hey@sinkaroid.org>"]
 description = "A fault-tolerant, adaptive imageboards downloader"
 readme = "README.md"
